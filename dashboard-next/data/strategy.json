@@ -1,0 +1,297 @@
+{
+ "rr_checks": [
+  {
+   "area": "Middle-order batting",
+   "metric": "Strike rate, batting positions 4-6",
+   "season": "2026",
+   "rr": 150.9532062391681,
+   "league_avg": 148.6642022320739,
+   "rank": 4,
+   "teams": 10,
+   "higher_is_better": true,
+   "unit": "runs per 100 balls"
+  },
+  {
+   "area": "Middle-order batting",
+   "metric": "Batting average, positions 4-6",
+   "season": "2026",
+   "rr": 26.393939393939394,
+   "league_avg": 31.26306909748315,
+   "rank": 8,
+   "teams": 10,
+   "higher_is_better": true,
+   "unit": "runs per dismissal"
+  },
+  {
+   "area": "Death-over bowling",
+   "metric": "Economy, overs 16-20",
+   "season": "2026",
+   "rr": 10.693069306930694,
+   "league_avg": 10.797114639138716,
+   "rank": 5,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "runs per over"
+  },
+  {
+   "area": "Death-over bowling",
+   "metric": "Wickets per over, overs 16-20",
+   "season": "2026",
+   "rr": 0.38613861386138615,
+   "league_avg": 0.42105267451254774,
+   "rank": 8,
+   "teams": 10,
+   "higher_is_better": true,
+   "unit": "wickets per over"
+  },
+  {
+   "area": "Spin bowling",
+   "metric": "Spin economy, all overs",
+   "season": "2026",
+   "rr": 9.395833333333334,
+   "league_avg": 9.44830481076734,
+   "rank": 5,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "runs per over"
+  },
+  {
+   "area": "Spin bowling",
+   "metric": "Balls per spin wicket",
+   "season": "2026",
+   "rr": 17.454545454545453,
+   "league_avg": 22.177965486062675,
+   "rank": 1,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "balls"
+  },
+  {
+   "area": "Spin bowling",
+   "metric": "Spin economy, overs 7-15",
+   "season": "2026",
+   "rr": 9.380952380952381,
+   "league_avg": 9.10013830386017,
+   "rank": 7,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "runs per over"
+  },
+  {
+   "area": "Middle-order batting",
+   "metric": "Strike rate, batting positions 4-6",
+   "season": "2025",
+   "rr": 161.08108108108107,
+   "league_avg": 150.42879121500295,
+   "rank": 2,
+   "teams": 10,
+   "higher_is_better": true,
+   "unit": "runs per 100 balls"
+  },
+  {
+   "area": "Middle-order batting",
+   "metric": "Batting average, positions 4-6",
+   "season": "2025",
+   "rr": 27.9375,
+   "league_avg": 30.124468894395363,
+   "rank": 8,
+   "teams": 10,
+   "higher_is_better": true,
+   "unit": "runs per dismissal"
+  },
+  {
+   "area": "Death-over bowling",
+   "metric": "Economy, overs 16-20",
+   "season": "2025",
+   "rr": 12.400000000000002,
+   "league_avg": 10.976551027374493,
+   "rank": 10,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "runs per over"
+  },
+  {
+   "area": "Death-over bowling",
+   "metric": "Wickets per over, overs 16-20",
+   "season": "2025",
+   "rr": 0.4,
+   "league_avg": 0.4801410850281186,
+   "rank": 9,
+   "teams": 10,
+   "higher_is_better": true,
+   "unit": "wickets per over"
+  },
+  {
+   "area": "Spin bowling",
+   "metric": "Spin economy, all overs",
+   "season": "2025",
+   "rr": 9.336283185840708,
+   "league_avg": 8.984713021397607,
+   "rank": 7,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "runs per over"
+  },
+  {
+   "area": "Spin bowling",
+   "metric": "Balls per spin wicket",
+   "season": "2025",
+   "rr": 25.11111111111111,
+   "league_avg": 21.190977404992942,
+   "rank": 9,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "balls"
+  },
+  {
+   "area": "Spin bowling",
+   "metric": "Spin economy, overs 7-15",
+   "season": "2025",
+   "rr": 8.879518072289157,
+   "league_avg": 8.788274450647796,
+   "rank": 6,
+   "teams": 10,
+   "higher_is_better": false,
+   "unit": "runs per over"
+  }
+ ],
+ "players": [
+  {
+   "name": "Sikandar Raza",
+   "role": "Spin all-rounder",
+   "bowling": {
+    "final_rank": 26,
+    "data_rank": 66,
+    "rating": -0.3651046625079327,
+    "hp_balls": 277,
+    "matches": 52,
+    "ipl_share_pct": 4.33212996389891,
+    "robust_pct": 5.55555555555555
+   },
+   "batting": {
+    "final_rank": 4,
+    "data_rank": 24,
+    "rating": 1.470667437094105,
+    "hp_balls": 311,
+    "matches": 55,
+    "ipl_share_pct": 13.183279742765269,
+    "robust_pct": 94.44444444444444
+   },
+   "death_overs": {
+    "balls": 108,
+    "econ": 8.38888888888889,
+    "wpo": 0.5
+   },
+   "spin_middle_overs": {
+    "balls": 905,
+    "econ": 6.815469613259668
+   }
+  },
+  {
+   "name": "Mark Chapman",
+   "role": "Middle-order batter",
+   "batting": {
+    "final_rank": 3,
+    "data_rank": 19,
+    "rating": 1.768595445740015,
+    "hp_balls": 179,
+    "matches": 52,
+    "ipl_share_pct": 0.0,
+    "robust_pct": 77.77777777777779
+   },
+   "death_overs": {
+    "balls": 6,
+    "econ": 5.0,
+    "wpo": 0.0
+   },
+   "spin_middle_overs": {
+    "balls": 0,
+    "econ": null
+   }
+  },
+  {
+   "name": "Matheesha Pathirana",
+   "role": "Death-over specialist",
+   "bowling": {
+    "final_rank": 3,
+    "data_rank": 19,
+    "rating": 1.945798687693455,
+    "hp_balls": 537,
+    "matches": 53,
+    "ipl_share_pct": 65.36312849162012,
+    "robust_pct": 100.0
+   },
+   "death_overs": {
+    "balls": 525,
+    "econ": 9.748571428571429,
+    "wpo": 0.5485714285714286
+   },
+   "spin_middle_overs": {
+    "balls": 0,
+    "econ": null
+   }
+  },
+  {
+   "name": "Mustafizur Rahman",
+   "role": "Death-over alternative",
+   "bowling": {
+    "final_rank": 2,
+    "data_rank": 12,
+    "rating": 2.575781235809296,
+    "hp_balls": 646,
+    "matches": 70,
+    "ipl_share_pct": 26.62538699690402,
+    "robust_pct": 100.0
+   },
+   "death_overs": {
+    "balls": 634,
+    "econ": 9.056782334384858,
+    "wpo": 0.35962145110410093
+   },
+   "spin_middle_overs": {
+    "balls": 0,
+    "econ": null
+   }
+  }
+ ],
+ "chapman": {
+  "stated": {
+   "runs": 2074,
+   "average": 25.92,
+   "strike_rate": 135.73,
+   "fifties": 10,
+   "hundreds": 1,
+   "note": "Career T20I figures as given by the selector; not computed from the supplied data"
+  },
+  "dataset": {
+   "innings": 52,
+   "runs": 1189,
+   "average": 28.30952380952381,
+   "strike_rate": 143.0806257521059,
+   "fifties": 6,
+   "hundreds": 1,
+   "hand": "LHB",
+   "formats": [
+    "T20I"
+   ],
+   "ipl_balls": 0
+  },
+  "middle_overs": {
+   "balls": 517,
+   "strike_rate": 153.38491295938104,
+   "t20i_all_batters": 128.98230088495575,
+   "t20i_positions_4_6": 126.04400345125109
+  },
+  "bowling": {
+   "balls": 6,
+   "types": [
+    "Slow left-arm orthodox"
+   ]
+  }
+ },
+ "benchmarks": {
+  "death_econ": 10.244276650664608,
+  "death_wpo": 0.4691095939980218,
+  "spin_middle_econ": 7.943780194363097
+ }
+}

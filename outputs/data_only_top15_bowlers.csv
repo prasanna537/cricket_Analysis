@@ -1,0 +1,16 @@
+player_id,data_rank,final_rank,player_name,availability_status,excluded_reason,rating,n_hp,matches,ipl_share_hp,a_team_share_hp,flag
+34485,1,,Sufiyan Muqeem,Not eligible for IPL (Pakistan),Appears in Pakistan / Pakistan A squads in the data; Pakistan players are not eligible to play in the IPL,5.532869523194058,187.0,25,0.0,0.25668449197860965,mostly non-IPL balls
+6355,2,,Shaheen Afridi,Not eligible for IPL (Pakistan),Appears in Pakistan / Pakistan A squads in the data; Pakistan players are not eligible to play in the IPL,3.808802243877379,287.0,45,0.0,0.0,mostly non-IPL balls
+5979,3,,Abrar Ahmed,Not eligible for IPL (Pakistan),Appears in Pakistan / Pakistan A squads in the data; Pakistan players are not eligible to play in the IPL,3.780470790126788,242.0,35,0.0,0.0,mostly non-IPL balls
+781,4,,Sunil Narine,Retained (official),"Retained by Kolkata Knight Riders, retention list supplied 18 Nov 2026",3.486971980151105,314.0,66,1.0,0.0,
+2382,5,,Jamie Overton,Retained (official),"Retained by Chennai Super Kings, retention list supplied 18 Nov 2026",3.1658096685844113,194.0,29,0.3556701030927835,0.0,mostly non-IPL balls
+2933,6,,Jasprit Bumrah,Retained (official),"Retained by Mumbai Indians, retention list supplied 18 Nov 2026",3.075569216448772,530.0,75,0.6283018867924528,0.0,
+1612,7,,Yuzvendra Chahal,Retained (official),"Retained by Punjab Kings, retention list supplied 18 Nov 2026",3.0141042442231702,520.0,98,0.7730769230769231,0.0,
+6628,8,1.0,Gerald Coetzee,Unverified,,2.960591516732412,126.0,29,0.5,0.0,low HP volume
+2490,9,,Mohammad Nawaz,Not eligible for IPL (Pakistan),Appears in Pakistan / Pakistan A squads in the data; Pakistan players are not eligible to play in the IPL,2.9238047041736874,215.0,52,0.0,0.0,mostly non-IPL balls
+7327,10,,Rasikh Salam,Retained (official),"Retained by Royal Challengers Bengaluru, retention list supplied 18 Nov 2026",2.9199160283000185,201.0,28,0.8407960199004975,0.15920398009950248,
+3644,11,,Kuldeep Yadav,Retained (official),"Retained by Lucknow Super Giants (traded in), retention list supplied 18 Nov 2026",2.8566815442471083,524.0,88,0.6774809160305344,0.0,
+4373,12,2.0,Mustafizur Rahman,Unverified,,2.575781235809296,646.0,70,0.26625386996904027,0.0,mostly non-IPL balls
+4926,13,,Shadab Khan,Not eligible for IPL (Pakistan),Appears in Pakistan / Pakistan A squads in the data; Pakistan players are not eligible to play in the IPL,2.5447548723677955,185.0,41,0.0,0.0,mostly non-IPL balls
+2681,14,,Taskin Ahmed,Excluded by selector,"Removed at the selector's request, 18 Nov 2026",2.46594513630975,333.0,46,0.0,0.0,mostly non-IPL balls
+6256,15,,Varun Chakravarthy,Retained (official),"Retained by Kolkata Knight Riders, retention list supplied 18 Nov 2026",2.379852045342587,604.0,94,0.5728476821192053,0.0,

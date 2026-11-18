@@ -1,0 +1,35 @@
+[PASS] no excluded player in final batters list (230 excluded names)
+[PASS] no excluded player in final bowlers list 
+[PASS] no Pakistan-squad player in either final list (65 Pakistan-squad players in the data)
+       RR-retained players present in the final lists (allowed): ['Dasun Shanaka', 'Dhruv Jurel', 'Donovan Ferreira', 'Jofra Archer', 'Ravindra Jadeja']
+[PASS] no name repeats in batters list 
+[PASS] no name repeats in bowlers list 
+[PASS] batters: ratings identical to previous run for the 81 players present in both (max abs difference across rating, 5 z-scores, shrunk value, HP balls = 0; pools equal: True; data_rank == old rank: True)
+[PASS] bowlers: ratings identical to previous run for the 111 players present in both (max abs difference across rating, 5 z-scores, shrunk value, HP balls = 0; pools equal: True; data_rank == old rank: True)
+[PASS] batters: top10 csv order == txt order 
+[PASS] bowlers: top10 csv order == txt order 
+[PASS] report: final-selection table order == txt order 
+[PASS] report: section-4 evidence tables order == txt order 
+[PASS] report: appendix final-top-10 columns order == txt order 
+
+Players who entered the top 10 because of the exclusions:
+  batters: final #2 Donovan Ferreira (id 8182) rating 2.11, 177 HP balls, 30 matches, IPL share of HP balls 56%, A-team share 0%, in top 10 in 83% of scenarios [robust]; flags: low HP volume
+  batters: final #3 Mark Chapman (id 3374) rating 1.77, 179 HP balls, 52 matches, IPL share of HP balls 0%, A-team share 0%, in top 10 in 78% of scenarios [robust]; flags: low HP volume; mostly non-IPL balls
+  batters: final #4 Sikandar Raza (id 2984) rating 1.47, 311 HP balls, 55 matches, IPL share of HP balls 13%, A-team share 0%, in top 10 in 94% of scenarios [robust]; flags: mostly non-IPL balls
+  batters: final #5 Jimmy Neesham (id 3323) rating 1.22, 255 HP balls, 39 matches, IPL share of HP balls 6%, A-team share 0%, in top 10 in 89% of scenarios [robust]; flags: mostly non-IPL balls
+  batters: final #6 Dasun Shanaka (id 2436) rating 1.01, 477 HP balls, 61 matches, IPL share of HP balls 5%, A-team share 0%, in top 10 in 100% of scenarios [robust]; flags: mostly non-IPL balls
+  batters: final #7 Dhruv Jurel (id 7260) rating 0.81, 270 HP balls, 54 matches, IPL share of HP balls 99%, A-team share 0%, in top 10 in 83% of scenarios [robust]; flags: none
+  batters: final #8 Ravindra Jadeja (id 152) rating 0.65, 511 HP balls, 65 matches, IPL share of HP balls 89%, A-team share 0%, in top 10 in 83% of scenarios [robust]; flags: none
+  batters: final #9 George Dockrell (id 1101) rating 0.56, 281 HP balls, 42 matches, IPL share of HP balls 0%, A-team share 0%, in top 10 in 72% of scenarios; flags: mostly non-IPL balls
+  batters: final #10 Shimron Hetmyer (id 3297) rating 0.30, 521 HP balls, 94 matches, IPL share of HP balls 78%, A-team share 0%, in top 10 in 56% of scenarios; flags: none
+  bowlers: final #2 Mustafizur Rahman (id 4373) rating 2.58, 646 HP balls, 70 matches, IPL share of HP balls 27%, A-team share 0%, in top 10 in 100% of scenarios [robust]; flags: mostly non-IPL balls
+  bowlers: final #3 Matheesha Pathirana (id 8661) rating 1.95, 537 HP balls, 53 matches, IPL share of HP balls 65%, A-team share 0%, in top 10 in 100% of scenarios [robust]; flags: none
+  bowlers: final #4 Jofra Archer (id 3298) rating 1.53, 243 HP balls, 55 matches, IPL share of HP balls 48%, A-team share 0%, in top 10 in 100% of scenarios [robust]; flags: mostly non-IPL balls
+  bowlers: final #5 Lungi Ngidi (id 4641) rating 1.53, 201 HP balls, 38 matches, IPL share of HP balls 37%, A-team share 0%, in top 10 in 89% of scenarios [robust]; flags: mostly non-IPL balls
+  bowlers: final #6 Umran Malik (id 25048) rating 1.49, 169 HP balls, 31 matches, IPL share of HP balls 66%, A-team share 0%, in top 10 in 67% of scenarios; flags: none
+  bowlers: final #7 Wanindu Hasaranga (id 4900) rating 1.49, 501 HP balls, 91 matches, IPL share of HP balls 36%, A-team share 0%, in top 10 in 100% of scenarios [robust]; flags: mostly non-IPL balls
+  bowlers: final #8 Jimmy Neesham (id 3323) rating 1.47, 189 HP balls, 35 matches, IPL share of HP balls 0%, A-team share 0%, in top 10 in 72% of scenarios; flags: mostly non-IPL balls
+  bowlers: final #9 Adam Zampa (id 2636) rating 1.37, 332 HP balls, 51 matches, IPL share of HP balls 16%, A-team share 0%, in top 10 in 89% of scenarios [robust]; flags: mostly non-IPL balls
+  bowlers: final #10 FazalHaq Farooqi (id 7240) rating 1.12, 241 HP balls, 50 matches, IPL share of HP balls 7%, A-team share 0%, in top 10 in 39% of scenarios; flags: mostly non-IPL balls
+
+ALL CHECKS PASSED

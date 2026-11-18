@@ -1,0 +1,5 @@
+feature,label,mean_abs_shap_pp,direction_spearman,higher_value_effect
+rrr,Required rate,16.11621518365799,-0.9782358541130876,lowers win probability
+wickets_before,Wickets lost,14.361393856957749,-0.969209865921049,lowers win probability
+runs_needed,Runs needed,13.957275863128357,-0.9694599709213637,lowers win probability
+balls_left,Balls left,0.9903433762573551,-0.6277300498605352,lowers win probability

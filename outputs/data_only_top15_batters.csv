@@ -1,0 +1,16 @@
+player_id,data_rank,final_rank,player_name,availability_status,excluded_reason,rating,n_hp,matches,ipl_share_hp,a_team_share_hp,flag
+796,1,1.0,Matthew Wade,Unverified,,4.475228634884422,214.0,30,0.0,0.0,mostly non-IPL balls
+4708,2,,Rinku Singh,Retained (official),"Retained by Kolkata Knight Riders, retention list supplied 18 Nov 2026",3.701299414208687,485.0,83,0.7649484536082474,0.0,
+6396,3,,Tim David,Retained (official),"Retained by Royal Challengers Bengaluru, retention list supplied 18 Nov 2026",3.549099530054949,528.0,98,0.7083333333333334,0.0,
+37052,4,,Naman Dhir,Retained (official),"Retained by Mumbai Indians, retention list supplied 18 Nov 2026",3.385033128572091,189.0,45,0.7301587301587301,0.0,
+2756,5,,Shashank Singh,Retained (official),"Retained by Punjab Kings, retention list supplied 18 Nov 2026",3.229930274620086,285.0,42,1.0,0.0,
+143,6,,Dinesh Karthik,Retired from all cricket,"Retired from all cricket, 1 Jun 2024",3.059668791130127,396.0,61,0.73989898989899,0.0,
+1318,7,,Andre Russell,Retired from IPL,"Retired from IPL, 30 Nov 2025 (now KKR power coach; still plays other leagues)",2.8217153306520886,392.0,57,0.7653061224489796,0.0,
+4986,8,,Rovman Powell,Retained (official),"Retained by Kolkata Knight Riders, retention list supplied 18 Nov 2026",2.819173404648817,629.0,100,0.2861685214626391,0.0,mostly non-IPL balls
+8101,9,,Ashutosh Sharma,Retained (official),"Retained by Delhi Capitals, retention list supplied 18 Nov 2026",2.7824927534028565,258.0,27,0.9767441860465116,0.023255813953488372,
+1699,10,,Suryakumar Yadav,Retained (official),"Retained by Mumbai Indians, retention list supplied 18 Nov 2026",2.7512153680738183,345.0,138,0.7101449275362319,0.0,
+1077,11,,David Miller,Retained (official),"Retained by Delhi Capitals, retention list supplied 18 Nov 2026",2.7215713050202295,528.0,81,0.6666666666666666,0.0,
+4773,12,,Jaker Ali Anik,Excluded by selector,"Removed at the selector's request, 18 Nov 2026",2.394449584684929,304.0,33,0.0,0.0,mostly non-IPL balls
+7897,13,,Namboori Tilak Varma,Retained (official),"Retained by Mumbai Indians, retention list supplied 18 Nov 2026",2.2898110290781264,525.0,125,0.5638095238095238,0.017142857142857144,
+20702,14,,Tristan Stubbs,Retained (official),"Retained by Delhi Capitals, retention list supplied 18 Nov 2026",2.237679523534284,461.0,68,0.6377440347071583,0.0,
+4260,15,,Heinrich Klaasen,Retained (official),"Retained by Sunrisers Hyderabad, retention list supplied 18 Nov 2026",2.216839393251272,359.0,72,0.8356545961002786,0.0,

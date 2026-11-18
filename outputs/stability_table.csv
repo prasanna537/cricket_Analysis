@@ -1,0 +1,5 @@
+top10_overlap,n_common_eligible,spearman,role,label,half_min,n_a,n_b,a_vs_full,b_vs_full
+0,13,-0.32967032967032966,bat,2022-23 vs 2024+,60,26,42,7,3
+2,19,0.02280701754385965,bat,odd vs even matches,60,31,30,6,6
+0,26,-0.14051282051282052,bowl,2022-23 vs 2024+,50,46,70,4,4
+1,41,0.11951219512195126,bowl,odd vs even matches,50,55,52,4,4

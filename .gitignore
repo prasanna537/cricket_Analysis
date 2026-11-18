@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Next.js dashboard
+dashboard-next/node_modules/
+dashboard-next/.next/
+dashboard-next/dev.log
+dashboard-next/next-env.d.ts
+*.log
+
+# Raw competition data pack (not redistributed here; place it in "Data Pack/" to run analysis.py)
+Data Pack/
+
+# Superseded static prototype of the dashboard (replaced by dashboard-next/)
+dashboard/
+
+# OS / editor junk
+.DS_Store
+NUL
+Thumbs.db

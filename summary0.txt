@@ -1,0 +1,562 @@
+
+===== ball_by_ball (200999, 33) dups: 0
+                       dtype   nulls  nunique                   sample
+match_id               int64       0      867                    13511
+innings                int64       0        4                        1
+overid                 int64       0       20                        1
+over_ball_num          int64       0       13                        1
+innings_ball_num       int64       0      136                        1
+batting_team_id        int64       0       38                       22
+bowling_team_id        int64       0       38                       28
+striker_id             int64       0      888                     1187
+striker_name          object       0      885                Jason Roy
+non_striker_id         int64       0      867                     6273
+non_striker_name      object       0      864               Tom Banton
+bowler_id              int64       0      647                     1772
+bowler_name           object       0      646         Sheldon Cottrell
+batting_type          object       0        2                      RHB
+bowling_type          object       0       12     Left-arm fast-medium
+batting_order          int64       0       13                        1
+runs                   int64       0        7                        0
+is_four                 bool       0        2                    False
+is_six                  bool       0        2                    False
+is_wicket               bool       0        2                    False
+dismissal_type_id    float64  190118        8                      NaN
+dismissal_type        object  190118        9                      NaN
+dismissed_player_id  float64  190107      814                      NaN
+extras_type           object  189167        6                      NaN
+extras1_runs           int64       0        6                        0
+extras_2_runs          int64       0        3                        0
+pace_or_spin          object       0        2                     Pace
+bowl_speed           float64       0     1033                      0.0
+stroke                object    6158       30              Cover Drive
+delivery_style        object     391       34                  Inswing
+over_or_around        object     407        2                     Over
+on_or_off             object       0        2                 Off-side
+delivery_ist_time     object       0   200826  2022-01-23 00:00:00 UTC
+
+===== matches (883, 22) dups: 0
+                            dtype  nulls  nunique                        sample
+match_id                    int64      0      883                         13511
+comp_id                     int64      0      138                          1331
+match_number                int64      0       75                             1
+match_date                 object      0      686                    2022-01-22
+stage                      object      0        7                        League
+venue_id                    int64      0       98                            54
+venue_country              object      0       17                   West Indies
+home_team_id                int64      0       36                            28
+home_team                  object      0       36                   West Indies
+away_team_id                int64      0       36                            22
+away_team                  object      0       36                       England
+home_team_captain_id      float64     44       89                           NaN
+away_team_captain_id      float64     45       98                           NaN
+toss_win_team_id          float64     15       37                          28.0
+toss_opted                 object     15        2                      Fielding
+man_of_the_match            int64      0      293                             0
+first_inn_revised_overs   float64    858       13                           NaN
+second_inn_revised_overs  float64    858       12                           NaN
+revised_target            float64    860       23                           NaN
+knock_out                   int64      0        2                             0
+win_team_id               float64     41       36                          28.0
+result                     object      0      670  West Indies Won by 9 Wickets
+
+===== competitions (141, 4) dups: 0
+               dtype  nulls  nunique                                        sample
+comp_id        int64      0      141                                          3395
+comp_name     object      0      141  South Africa in New Zealand T20I Series 2026
+match_format  object      0        2                                          T20I
+season        object      0        8                                          2026
+
+===== playing_eleven (28381, 9) dups: 0
+                 dtype  nulls  nunique sample
+match_id         int64      0      880  13511
+team_id          int64      0       38     22
+player_id        int64      0     1082   1187
+batting_order  float64   8678       13    1.0
+is_played         bool      0        2   True
+is_captain      object   8667        2  False
+is_wk           object   8667        2  False
+is_impact        int64      0        2      0
+is_impact_off    int64      0        2      0
+
+===== competition_team_player_mapping (6413, 6) dups: 0
+              dtype  nulls  nunique                                   sample
+comp_id       int64      0      140                                     1331
+comp_name    object      0      140  England in West Indies T20I Series 2022
+team_id       int64      0       38                                       22
+team_name    object      0       38                                  England
+player_id     int64      0     1217                                      478
+player_name  object      0     1210                              Eoin Morgan
+
+===== teams (353, 3) dups: 0
+            dtype  nulls  nunique   sample
+comp_id     int64      0      141     1331
+team_id     int64      0       38       22
+team_name  object      0       38  England
+
+ extras_type {nan: 189167, 'wide': 7714, 'legbyes': 2748, 'Overstep': 576, 'byes': 529, 'other': 264, 'Penalty': 1}
+
+ dismissal_type {nan: 190118, 'Caught': 7557, 'Bowled': 1775, 'LBW': 709, 'RunOut': 600, 'Stump': 214, 'Hit Wicket': 17, 'Retire Out': 6, 'Obstracting the field': 2, 'Obstructing the field': 1}
+
+ pace_or_spin {'Pace': 123886, 'Spin': 77113}
+
+ batting_type {'RHB': 131006, 'LHB': 69993}
+
+ bowling_type {'Right-arm Leg-Break': 28027, 'Right-arm medium-fast': 27014, 'Right-arm Fast': 26637, 'Right-arm medium': 23919, 'Slow left-arm orthodox': 23582, 'Right-arm offbreak': 20948, 'Right-arm fast-medium': 15380, 'Left-arm medium-fast': 12492, 'Left-arm fast-medium': 7780, 'Left-arm medium': 6082, 'Left-arm Chinaman': 4685, 'Left-arm Fast': 4453}
+innings {1: 105727, 2: 95234, 3: 25, 4: 13}
+runs {0: 79387, 1: 72267, 4: 23303, 6: 12814, 2: 12547, 3: 656, 5: 25}
+is_four {False: 177716, True: 23283}
+is_six {False: 188188, True: 12811}
+is_wicket {False: 190118, True: 10881}
+
+ stage {'League': 620, 'Others': 226, 'Final': 12, 'Qualifier': 10, 'Super 4': 6, 'Eliminator': 5, 'Semi Final': 4}
+
+ knock_out {0: 852, 1: 31}
+
+ result {'No Result': 21, 'Match Abandoned': 19, 'India Won by 7 wickets': 8, 'Delhi Capitals Won by 6 wickets': 7, 'Kolkata Knight Riders Won by 8 wickets': 6, 'India Won by 6 Wickets': 5, 'Gujarat Titans Won by 7 wickets': 5, 'Punjab Kings Won by 5 wickets': 5, 'Royal Challengers Bengaluru Won by 6 wickets': 4, 'Punjab Kings Won by 7 wickets': 4, 'Rajasthan Royals Won by 6 wickets': 4, 'West Indies Won by 5 wickets': 4, 'Bangladesh Won by 8 wickets': 4, 'Australia Won by 3 wickets': 4, 'New Zealand Won by 8 wickets': 4, 'Bangladesh Won by 4 wickets': 4, 'Mumbai Indians Won by 6 wickets': 4, 'Pakistan Won by 7 wickets': 4, 'Australia Won by 6 wickets': 3, 'South Africa Won by 7 wickets': 3, 'Afghanistan Won by 7 wickets': 3, 'Mumbai Indians Won by 7 wickets': 3, 'Sunrisers Hyderabad Won by 6 wickets': 3, 'Lucknow Super Giants Won by 6 wickets': 3, 'England Won by 4 wickets': 3, 'India Won by 48 runs': 3, 'New Zealand Won by 7 wickets': 3, 'Royal Challengers Bengaluru Won by 5 wickets': 3, 'India Won by 7 Wickets': 3, 'Gujarat Titans Won by 7 Wickets': 3, 'Australia Won by 7 wickets': 3, 'Pakistan Won by 6 wickets': 3, 'Sri Lanka Won by 4 wickets': 3, 'Chennai Super Kings Won by 5 wickets': 3, 'Royal Challengers Bengaluru Won by 9 wickets': 3, 'Sunrisers Hyderabad Won by 5 wickets': 3, 'Gujarat Titans won by 6 wickets': 3, 'Bangladesh Won by 6 wickets': 3, 'Pakistan Won by 9 wickets': 2, 'Rajasthan Royals Won by 6 runs': 2, 'Afghanistan Won by 6 Wickets': 2, 'West Indies Won by 5 Wickets': 2, 'England Won by 7 wickets': 2, 'Punjab Kings Won by 8 wickets': 2, 'Delhi Capitals Won by 7 wickets': 2, 'Sri Lanka Won by 4 Wickets': 2, 'West Indies Won by 7 runs': 2, 'Gujarat Titans Won by 8 wickets': 2, 'Zimbabwe Won by 4 Wickets': 2, 'Gujarat Titans Won by 5 wickets': 2, 'Gujarat Titans Won by 5 Wickets': 2, 'Bangladesh Won by 2 wickets': 2, 'India A Won by 6 wickets': 2, 'Sri Lanka A Won by 7 wickets': 2, 'Pakistan Won by 31 runs': 2, 'Lucknow Super Giants Won by 5 wickets': 2, 'Afghanistan Won by 38 runs': 2, 'New Zealand Won by 6 wickets': 2, 'Sri Lanka Won by 8 wickets': 2, 'Royal Challengers Bengaluru Won by 7 wickets': 2, 'Pakistan Won by 4 wickets': 2, 'Pakistan Won by 5 Wickets': 2, 'West Indies Won by 4 Wickets': 2, 'New Zealand Won by 9 Wickets': 2, 'Australia Won by 5 Wickets': 2, 'India Won by 5 wickets': 2, 'Pakistan Won by 57 runs': 2, 'England Won by 8 Runs': 2, 'Rajasthan Royals Won by 8 wickets': 2, 'Australia Won by 4 wickets': 2, 'Bangladesh Won by 7 wickets': 2, 'India Won by 4 wickets': 2, 'Bangladesh A Won by 8 wickets': 2, 'Bangladesh Won by 8 runs': 2, 'Mumbai Indians Won by 8 wickets': 2, 'Royal Challengers Bengaluru won by 8 wickets': 2, 'Punjab Kings Won by 6 wickets': 2, 'Ireland Won by 7 Wickets': 2, 'Lucknow Super Giants Won by 33 runs': 2, 'Delhi Capitals Won By 4 Wickets': 2, 'West Indies Won by 16 runs': 2, 'Gujarat Titans Won by 3 wickets': 2, 'Kolkata Knight Riders Won by 7 wickets': 2, 'Chennai Super Kings Won by 7 wickets': 2, 'Sunrisers Hyderabad won by 8 wickets': 2, 'Lucknow Super Giants Won by 7 wickets': 2, 'Royal Challengers Bengaluru Won by 8 wickets': 2, 'West Indies Won by 2 wickets': 2, 'Sri Lanka Won by 6 wickets': 2, 'Hong Kong Won by 8 Wickets': 2, 'Sri Lanka Won by 9 wickets': 2, 'India Won by 8 wickets': 2, 'Ireland Won by 5 wickets': 2, 'Rajasthan Royals Won by 7 wickets': 2, 'West Indies Won by 8 wickets': 2, 'West Indies Won by 7 wickets': 2, 'Rajasthan Royals Won by 4 wickets': 2, 'Kolkata Knight Riders Won by 5 Wickets': 2, 'England Won by 3 wickets': 2, 'Pakistan Won by 5 wickets': 2, 'England Won by 6 wickets': 2, 'Bangladesh Won by 27 runs': 2, 'Sunrisers Hyderabad Won by 4 wickets': 2, 'India Won by 6 wickets': 2, 'Kolkata Knight Riders Won by 4 wickets': 2, 'Gujarat Titans won by 62 runs': 2, 'Punjab Kings Won by 3 wickets': 2, 'Mumbai Indians won by 6 wickets': 2, 'Delhi Capitals Won by 20 runs': 2, 'Punjab Kings won by 54 runs': 2, 'England Won by 8 wickets': 2, 'Gujarat Titans Won by 4 wickets': 2, 'Chennai Super Kings Won by 8 wickets': 2, 'India Won by 61 runs': 1, 'Mumbai Indians Won by 54 runs': 1, 'South Africa Won by 3 wickets': 1, 'New Zealand Won by 5 runs': 1, 'India Won by 135 runs': 1, 'India Won by 11 runs': 1, 'Sunrisers Hyderabad Won by 8 wickets': 1, 'Pakistan Won by 10 wickets': 1, 'Lucknow Super Giants Won by 12 runs': 1, 'Gujarat Titans Won by 58 runs': 1, 'Punjab Kings Won by 18 runs': 1, 'Royal Challengers Bengaluru Won by 12 runs': 1, 'Lucknow Super Giants Won by 4 runs': 1, 'Rajasthan Royals Won by 50 runs': 1, 'Mumbai Indians Won by 12 runs': 1, 'Punjab Kings Won by 16 runs': 1, 'Delhi Capitals Tied with Rajasthan Royals (DC won the Super Over)': 1, 'Delhi Capitals Won by 25 runs': 1, 'Mumbai Indians Won by 4 wickets': 1, 'Kolkata Knight Riders Won by 80 runs': 1, 'Zimbabwe Won by 2 wickets': 1, 'Lucknow Super Giants Won by 2 runs': 1, 'Mumbai Indians Won by 9 wickets': 1, 'Gujarat Titans Won by 39 runs': 1, 'Royal Challengers Bengaluru Won by 50 runs': 1, 'Delhi Capitals Won by 8 wickets': 1, 'Punjab Kings Won by 11 runs': 1, 'Delhi Capitals Won by 1 wickets': 1, 'Royal Challengers Bengaluru Won by 11 runs': 1, 'Chennai Super Kings Won by 4 wickets': 1, 'Sunrisers Hyderabad Won by 44 runs': 1, 'Gujarat Titans Won by 36 runs': 1, 'West Indies Won by 9 Wickets': 1, 'Sri Lanka Won by 73 runs': 1, 'India Won by 42 runs': 1, 'India Won by 86 runs': 1, 'Bangladesh Won by 80 runs': 1, 'Bangladesh Won by 7 runs': 1, 'West Indies Won by 8 wickets (DLS)': 1, 'West Indies Won by 30 runs': 1, 'West Indies Won by 28 runs': 1, 'South Africa Won by 11 runs': 1, 'Ireland Won by 3 runs': 1, 'Scotland Won by 71 runs': 1, 'Ireland Won by 1 runs': 1, 'Netherlands Won by 41 runs': 1, 'Australia Won by 13 runs': 1, 'Australia Won by 29 runs': 1, 'India Won by 10 wickets': 1, 'India Won by 2 wickets': 1, 'India Won by 23 runs': 1, 'India Won by 100 runs': 1, 'Zimbabwe Won by 13 runs': 1, 'Zimbabwe Won by 8 wickets': 1, 'Bangladesh Won by 5 runs': 1, 'Bangladesh Won by 9 runs': 1, 'England Won by 23 runs': 1, 'Pakistan Won by 9 runs': 1, 'New Zealand Won by 4 runs': 1, 'Sri Lanka won by 28 runs': 1, 'Bangladesh won by 8 wickets': 1, 'Sri Lanka won by 3 runs': 1, 'Afghanistan won by 57 runs': 1, 'India Won by 133 runs': 1, 'England Won by 26 runs': 1, 'Afghanistan A Won by 7 wickets': 1, 'South Africa Won by 14 runs(DLS method)': 1, 'Afghanistan A Won by 20 runs': 1, 'Pakistan A Won by 114 runs': 1, 'Sri Lanka A Won by 19 runs': 1, 'Hong Kong Won by 5 wickets': 1, 'India A Won by 7 wickets': 1, 'Pakistan A Won by 74 runs': 1, 'Afghanistan A Won by 4 wickets': 1, 'Sri Lanka A Won by 42 runs': 1, 'India A Won by 7 runs': 1, 'United Arab Emirates Won by 4 wickets': 1, 'Afghanistan A Won by 11 runs': 1, 'Bangladesh A Won by 5 wickets': 1, 'England Won by 146 runs': 1, 'England Won by 37 runs': 1, 'India Won by 15 runs': 1, 'England Won by 21 runs': 1, 'Netherlands Won by 4 runs': 1, 'Canada Won by 8 runs': 1, 'Netherlands Won by 102 runs': 1, 'Netherlands Won by 5 wickets': 1, 'Ireland Won by 10 runs': 1, 'South Africa Won by 8 wickets': 1, 'Australia Won by 70 runs': 1, 'Australia Won by 28 runs': 1, 'India Tied with Srilanka (India Won the Super Over by 2 wickets)': 1, 'India Won by 7 wickets(D/L Method)': 1, 'India Won by 43 runs': 1, 'India Won by 150 runs': 1, 'United States Of America Won by 20 runs': 1, 'New Zealand Won by 5 wickets': 1, 'Kolkata Knight Riders Won by 14 runs': 1, 'Sunrisers Hyderabad Won by 33 runs': 1, 'Sunrisers Hyderabad Won by 10 runs': 1, 'Punjab Kings Won by 54 runs': 1, 'Mumbai Indians Won by 99 runs': 1, 'Sunrisers Hyderabad Won by 47 runs': 1, 'Rajasthan Royals Won by 40 runs': 1, 'Chennai Super Kings Won by 103 runs': 1, 'Kolkata Knight Riders Won by Super over (Match Tied)': 1, 'Lucknow Super Giants Won by 9 runs (DLS method)': 1, 'Sunrisers Hyderabad Won by 55 runs': 1, 'Gujarat Titans Won by 77 runs': 1, 'Royal Challengers Bengaluru Won by 2 wickets': 1, 'Delhi Capitals Won by 3 wickets': 1, 'Gujarat Titans Won by 82 runs': 1, 'Kolkata Knight Riders Won by 29 runs': 1, 'Royal Challengers Bengaluru Won by 23 runs': 1, 'Delhi Capitals Won by 5 wickets': 1, 'Chennai Super Kings Won by 32 runs': 1, 'Sunrisers Hyderabad Won by 57 runs': 1, 'Royal Challengers Bengaluru Won by 18 runs': 1, 'Chennai Super Kings Won by 23 runs': 1, 'India A Won by 148 runs': 1, 'Afghanistan A Won by 3 wickets': 1, 'Oman Won by 2 wickets': 1, 'Pakistan A Won by 8 wickets': 1, 'Pakistan A Won by 9 wickets': 1, 'Afghanistan A Won by 24 runs': 1, 'Sri Lanka A Won by 6 runs': 1, 'Bangladesh A Won The Super Over': 1, 'Pakistan A Won by 5 runs': 1, 'Pakistan A Won the super over': 1, 'Sunrisers Hyderabad Won by 65 runs': 1, 'Royal Challengers Bengaluru Won by 43 runs': 1, 'Rajasthan Royals Won by 27 runs': 1, 'Gujarat Titans Won by 1 run': 1, 'Lucknow Super Giants Won by 3 wickets': 1, 'Gujarat Titans Won by 89 runs': 1, 'Rajasthan Royals Won by 30 runs': 1, 'Sri Lanka Won by 6 runs': 1, 'India Won by 35 runs': 1, 'Ireland Won by 34 runs': 1, 'Ireland Won by 1 run': 1, 'West Indies Won by 6 wickets': 1, 'India Won by 14 runs': 1, 'West Indies Won by 24 runs': 1, 'Sri Lanka Won by 37 runs': 1, 'India Won by 90 runs': 1, 'Australia Won by 7 runs': 1, 'Delhi Capitals Won by 40 runs': 1, 'Zimbabwe Won by 32 runs': 1, 'Bangladesh Won by 34 runs': 1, 'New Zealand Won by 87 runs': 1, 'India Won by 127 runs': 1, 'India Won by 2 runs': 1, 'Pakistan Won by 82 runs': 1, 'Afghanistan Won by 37 runs': 1, 'New Zealand Won by 6 wickets (DLS Method)': 1, 'South Africa Won by 33 runs': 1, 'South Africa Won by 19 runs': 1, 'New Zealand Won by 68 runs': 1, 'Royal Challengers Bengaluru Won by 92 runs': 1, 'Rajasthan Royals Won by 47 runs': 1, 'Ireland Won by 57 runs': 1, 'Ireland Won by 30 runs': 1, 'Sri Lanka Won by 14 runs': 1, 'New Zealand Won by 50 runs': 1, 'India Won by 46 runs': 1, 'Afghanistan Won by 39 runs': 1, 'West Indies Won by 13 runs': 1, 'England Won by 11 runs (DLS method)': 1, 'England Won by 6 wickets(DLS Method)': 1, 'England Won by 12 runs': 1, 'Pakistan Won by 22 runs': 1, 'Pakistan Won by 90 runs': 1, 'Pakistan Won by 111 runs': 1, 'Pakistan A Won by 40 runs': 1, 'Pakistan Won by 69 runs': 1, 'Punjab Kings Won by 4 wickets': 1, 'Australia Won by 8 wickets': 1, 'New Zealand Won by 45 runs': 1, 'Sri Lanka Won by 7 runs': 1, 'New Zealand Won by 9 wickets': 1, 'Ireland won by 38 runs': 1, 'New Zealand Won by 115 runs': 1, 'Zimbabwe Won by 3 wickets': 1, 'West Indies Won by 62 runs': 1, 'Australia Won By 6 Wickets': 1, 'South Africa Won by 51 runs': 1, 'Pakistan Won by 14 runs': 1, 'Pakistan Won by 13 runs': 1, 'South Africa Won by 9 wickets': 1, 'West Indies Won by 6 runs(DLS Method)': 1, 'Australia Won by 17 runs': 1, 'South Africa Won by 53 runs': 1, 'Australia Won by 2 wickets': 1, 'New Zealand Won by 8 runs': 1, 'Afghanistan Won by 3 wickets': 1, 'Afghanistan Won by 50 runs': 1, 'Zimbabwe Won by 4 wickets': 1, 'Mumbai Indians Won by 100 runs': 1, 'Gujarat Titans Won by 38 runs': 1, 'Royal Challengers Bengaluru Won by 2 runs': 1, 'Kolkata Knight Riders Won by 1 run': 1, 'Punjab Kings Won by 37 runs': 1, 'Gujarat Titans Won by 3 wickets (DLS Method)': 1, 'Chennai Super Kings Won by 2 wickets': 1, 'Sunrisers Hyderabad Won by 110 runs': 1, 'Gujarat Titans Won by 10 wickets': 1, 'Sunrisers Hyderabad Won by 42 runs': 1, 'Mumbai Indians Won by 59 runs': 1, 'Punjab Kings Won by 10 runs': 1, 'Chennai Super Kings Won by 83 runs': 1, 'Mumbai Indians Won by 20 runs': 1, 'Royal Challengers Bengaluru Won by 6 runs': 1, 'India Won by 101 runs': 1, 'India Won by 30 runs': 1, 'Zimbabwe Won by 67 runs': 1, 'West Indies Won by 10 wickets': 1, 'Afghanistan Won by 18 runs': 1, 'Afghanistan Won by 4 runs': 1, 'Pakistan Won by 75 runs': 1, 'Zimbabwe Won by 5 wickets': 1, 'Bangladesh Won by 9 wickets': 1, 'Nepal Won by 19 runs': 1, 'Nepal Won by 90 runs': 1, 'South Africa Won by 55 runs': 1, 'Pakistan Won by 37 runs': 1, 'England Won by 65 runs': 1, 'West Indies Won by 14 runs': 1, 'Ireland Won by 39 runs': 1, 'Afghanistan Won by 53 runs': 1, 'Afghanistan Won by 9 runs': 1, 'New Zealand Won by 3 runs': 1, 'New Zealand Won by 9 runs': 1, 'Pakistan Won by 39 runs': 1, 'India won the Super Over(Match Tied)': 1, 'Pakistan Won by 11 runs': 1, 'India Won by 41 runs': 1, 'United Arab Emirates Won by 2 wickets': 1, 'United Arab Emirates Won by 7 wickets': 1, 'Sri Lanka Won by 7 wickets': 1, 'Bangladesh Won by 83 runs': 1, 'Pakistan Won by 74 runs': 1, 'England Won by 125 runs': 1, 'England Won by 9 wickets': 1, 'England Won by 56 runs': 1, 'England Won by 119 runs': 1, 'Afghanistan Won by 94 runs': 1, 'India Won by 9 wickets': 1, 'Pakistan Won by 93 runs': 1, 'United Arab Emirates Won by 42 runs': 1, 'Pakistan Won by 41 runs': 1, 'India Won by 21 runs': 1, 'Afghanistan Won By 10Runs': 1, 'Rajasthan Royals Won by 9 wickets': 1, 'Afghanistan won by 3 runs': 1, 'India Won by 101 Runs': 1, 'Afghanistan Won by 8 Wickets': 1, 'India Won by 5 Wickets': 1, 'India Won by 40 Runs': 1, 'Sri Lanka Won by 2 Wickets': 1, 'Pakistan Won by 155 Runs': 1, 'Sri Lanka Won by 6 Wickets': 1, 'Pakistan Won by 1 Wicket': 1, 'Sri Lanka Won by 5 Wickets': 1, 'Sri Lanka Won by 72 Runs': 1, 'Sri Lanka Won by 23 Runs': 1, 'New Zealand Won by 16 Runs': 1, 'New Zealand Won by 8 Wickets': 1, 'New Zealand Won by 13 Runs': 1, 'New Zealand Won by 90 Runs': 1, 'West Indies Won by 8 Wickets': 1, 'Ireland Won by 5 Wickets': 1, 'South Africa Won by 44 Runs': 1, 'South Africa won by 21 runs': 1, 'Zimbabwe Won by 10 runs': 1, 'Bangladesh Won by 7 Wickets': 1, 'Afghanistan Won by 21 Runs': 1, 'Afghanistan Won by 35 Runs': 1, 'India Won by 4 Runs': 1, 'India Won by 50 Runs': 1, 'India Won by 49 Runs': 1, 'England Won by 17 runs': 1, 'India Won by 68 Runs': 1, 'India Won by 59 Runs': 1, 'India Won by 88 Runs': 1, 'New Zealand Won by 31 Runs': 1, 'New Zealand Won by 88 runs': 1, 'England Won by 41 Runs': 1, 'South Africa Won by 58 Runs': 1, 'South Africa Won by 90 Runs': 1, 'Zimbabwe Won by 17 Runs': 1, 'Afghanistan Won by 22 Runs': 1, 'Afghanistan Won by 27 Runs': 1, 'Ireland Won by 7 Wickets(D/L Method)': 1, 'Australia Won by 31 runs': 1, 'Pakistan Won by 6 Wickets': 1, 'New Zealand Won by 48 Runs': 1, 'Pakistan Won by 7 Wickets': 1, 'India won by 65 runs': 1, 'Match Tied': 1, 'India Won by 2 Runs': 1, 'Sri Lanka Won by 16 Runs': 1, 'India Won by 91 Runs': 1, 'New Zealand won by 21 runs': 1, 'India won by 6 wickets': 1, 'India Won by 168 runs': 1, 'Zimbabwe Won by 5 Wickets': 1, 'Ireland Won by 6 wickets': 1, 'Punjab Kings Won by 7 Runs(D/L Method)': 1, 'Lucknow Super Giants Won by 50 runs': 1, 'Pakistan Won by 21 Runs': 1, 'Australia Won by 3 Wickets': 1, 'Hong Kong Won by 8 runs': 1, 'Bangladesh Won by 32 Runs': 1, 'Kuwait Won by 1 wicket': 1, 'United Arab Emirates Won by 47 Runs': 1, 'Kuwait Won by 6 Wickets': 1, 'Australia Won by 4 Wickets': 1, 'England Won by 6 Wickets': 1, 'Pakistan Won by 10 Wickets': 1, 'England Won by 63 Runs': 1, 'Pakistan Won by 3 Runs': 1, 'Pakistan Won by 6 Runs': 1, 'England Won by 8 Wickets': 1, 'England Won by 67 Runs': 1, 'India Won by 8 Wickets': 1, 'India Won by 16 Runs': 1, 'South Africa Won by 49 Runs': 1, 'Bangladesh won by 7 runs': 1, 'West Indies Won by 35 Runs': 1, 'India Won by 82 runs': 1, 'South Africa Won by 4 Wickets': 1, 'Rajasthan Royals Won by 23 Runs': 1, 'Lucknow Super Giants won by 12 Runs': 1, 'Royal Challengers Bengaluru Won by 4 Wkts': 1, 'Lucknow Super Giants won by 6 wickets': 1, 'Royal Challengers Bengaluru won by 7 wickets': 1, 'Delhi Capitals won by 44 run': 1, 'Rajasthan Royals Won By 3 Runs': 1, 'Sunrisers Hyderabad Won by 8 Wickets': 1, 'Chennai Super Kings Won by 23 Runs': 1, 'Punjab Kings won by 12 runs': 1, 'Gujarat Titans Won by 37 runs': 1, 'Sunrisers Hyderabad won by 7 wickets': 1, 'Lucknow Super Giants won by 18 runs': 1, 'Royal Challengers Bengaluru won by 16 runs': 1, 'Sunrisers Hyderabad won by 7 wicket': 1, 'Gujarat Titans won by 3 wickets': 1, 'Gujarat Titans won by 14 runs': 1, 'Kolkata Knight Riders Won by 6 wkts': 1, 'Royal Challengers Bengaluru won by 18 runs': 1, 'Lucknow Super Giants Won by 6 Wkts': 1, 'West Indies Won by 20 runs': 1, 'England Won by 34 runs': 1, 'West Indies Won by 17 runs': 1, 'India Won by 8 Runs': 1, 'India Won by 17 runs': 1, 'Australia Won by 20 runs (D/L method)': 1, 'Australia Won the one over Eliminator': 1, 'Australia Won by 6 Wkts': 1, 'Australia Won by 6 Wickets': 1, 'Sri Lanka Won by 5 wickets': 1, 'Kolkata Knight Riders Won by 6 Wkts': 1, 'Delhi Capitals Won by 4 Wickets': 1, 'Punjab Kings Won by 5 Wkts': 1, 'Rajasthan Royals Won by 61 Runs': 1, 'Royal Challengers Bengaluru Won 3 Wkts': 1, 'Rajasthan Royals Won by 7 Runs': 1, 'Delhi Capitals won by 9 wickets': 1, 'South Africa Won by 7 Wkts': 1, 'Royal Challengers Bengaluru won by 67 runs': 1, 'Kolkata Knight Riders Won by 52 Runs': 1, 'Delhi Capitals Won by 8 Wickets': 1, 'Mumbai Indians Won by 5 Wickets': 1, 'Kolkata Knight Riders won by 54 runs': 1, 'Gujarat Titans won by 7 wickets': 1, 'Rajasthan Royals Won by 24 Runs': 1, 'Delhi Capitals Won by 17 Runs': 1, 'Sunrisers Hyderabad Won by 3 Runs': 1, 'Lucknow Super Giants Won by 2 Runs': 1, 'Rajasthan Royals Won by 5 Wickets': 1, 'Mumbai Indians Won by 5 wickets': 1, 'Royal Challengers Bengaluru Won by 14 Runs': 1, 'Rajasthan Royals won by 7 wickets': 1, 'Australia Won by 10 Wickets': 1, 'Australia Won by 3 Wkts': 1, 'Chennai Super Kings won by 91 runs': 1, 'Lucknow Super Giants won by 75 runs': 1, 'Chennai Super Kings Won by 3 Wickets': 1, 'Rajasthan Royals won by 6 wickets': 1, 'Rajasthan Royals Won by 15 Runs': 1, 'Gujarat Titans Won by 8 Runs': 1, 'Sunrisers Hyderabad won by 9 wickets': 1, 'Lucknow Super Giants Won 36  Runs': 1, 'Punjab Kings Won by 11 Runs': 1, 'Rajasthan Royals Won by 29 Runs': 1, 'Lucknow Super Giants Won by 20 Runs': 1, 'Mumbai Indians Won By 5 Wickets': 1, 'Lucknow Super Giants won by 6 runs': 1, 'Chennai Super Kings won by 13 runs': 1, 'Kolkata Knight Riders Won by 7 Wickets': 1, 'Punjab Kings Won by 8 Wickets': 1, 'Royal Challengers Bengaluru won by 13 Runs': 1, 'Delhi Capitals Won by 21 Runs': 1, 'Mumbai Indians won by 5 runs': 1, 'Rajasthan Royals Won By 72 Runs': 1, 'Chennai Super Kings Won by 12 runs': 1, 'Punjab Kings Won by 5 runs': 1, 'Australia Won by 11 runs': 1, 'West Indies Won by 37 runs': 1, 'Australia Won by 72 Runs': 1, 'Australia Won by 27 Runs (DLS method)': 1, 'Zimbabwe Won By 1 Wicket': 1, 'Ireland Won by 4 Wickets': 1, 'Ireland Won By 6 Wickets': 1, 'Chennai Super Kings Won by 6 Wickets': 1, 'Punjab Kings Won by 4 Wickets': 1, 'Kolkata Knight Riders won by 4 runs': 1, 'Rajasthan Royals won by 20 runs': 1, 'Gujarat Titans won by 6 runs': 1, 'Royal Challengers Bengaluru won by 4 wickets': 1, 'Chennai Super Kings won by 63 runs': 1, 'Sunrisers Hyderabad won by 31 runs': 1, 'Rajasthan Royals won by 12 runs': 1, 'Australia Won by 34 Runs': 1, 'Pakistan Won by 42 Runs': 1, 'Lucknow Super Giants won by 21 runs': 1, 'New Zealand Won by 45 Runs': 1, 'Australia won by 8 wickets': 1, 'India won by 2 wickets': 1, 'India won by 44 runs': 1, 'India Won by 20 runs': 1, 'India won by 6 runs': 1, 'South Africa won by 5 wickets (DLS)': 1, 'India won by 106 runs': 1, 'West Indies won by 10 runs': 1, 'England Won By 7 Wickets': 1, 'England Won by 75 Runs': 1, 'Bangladesh won by 5 wickets': 1, 'New Zealand won by 17runs (DLS Method)': 1, 'India Won Super Over By 10 Runs': 1, 'New Zealand won by 46 runs': 1, 'New Zealand Won by 21 Runs': 1, 'Kolkata Knight Riders won by 7 wickets': 1, 'Lucknow Super Giants Won by 28 runs': 1, 'New Zealand Won by 6 Wickets': 1, 'Sunrisers Hyderabad Won by 1 runs': 1, 'Royal Challengers Bengaluru Won by 4 wickets': 1, 'Chennai Super Kings Won by 28 runs': 1, 'Kolkata Knight Riders Won by 98 runs': 1, 'Sunrisers Hyderabad Won by 10 wickets': 1, 'Royal Challengers Bengaluru Won by 60 runs': 1, 'Gujarat Titans Won by 35 runs': 1, 'Kolkata Knight Riders Won by 18 runs': 1, 'Royal Challengers Bengaluru Won by 47 runs': 1, 'Delhi Capitals Won by 19 runs': 1, 'Lucknow Super Giants Won by 18 runs': 1, 'Royal Challengers Bengaluru Won by 27 runs': 1, 'Sunrisers Hyderabad Won by 36 runs': 1, 'Sri Lanka Won By 3 Wickets': 1, 'Sri Lanka Won by 9 Wickets': 1, 'Sri Lanka Won by 4 runs': 1, 'Kolkata Knight Riders Won by 24 runs': 1, 'Lucknow Super Giants Won by 4 wickets': 1, 'Kolkata Knight Riders Won by 106 runs': 1, 'Chennai Super Kings Won by 78 runs': 1, 'Rajasthan Royals Won by 6 Wickets': 1, 'Mumbai Indians Won by 29 runs': 1, 'Sunrisers Hyderabad Won by 2 runs': 1, 'Rajasthan Royals Won by 3 wickets': 1, 'Chennai Super Kings Won by 20 runs': 1, 'Sunrisers Hyderabad Won by 25 runs': 1, 'Rajasthan Royals Won by 2 wickets': 1, 'Mumbai Indians Won by 9 runs': 1, 'Lucknow Super Giants Won by 8 wickets': 1, 'Sunrisers Hyderabad Won by 67 runs': 1, 'Kolkata Knight Riders Won by 1 runs': 1, 'England Won by 1 Run': 1, 'Delhi Capitals Won by 4 runs': 1, 'Royal Challengers Bengaluru Won by 35 runs': 1, 'Delhi Capitals Won by 10 runs': 1, 'Australia Won by 111 Runs': 1, 'New Zealand Won by 74 runs': 1, 'Kolkata Knight Riders Won By 81 Runs': 1, 'Punjab Kings Won By 13Runs': 1, 'Chennai Super Kings won by 49 runs': 1, 'Delhi Capitals Won by 7 Runs': 1, 'Gujarat Titans Won by 55 runs': 1, 'Kolkata Knight Riders Won by 21 Runs': 1, 'Rajasthan Royals Won by 32 Runs': 1, 'Lucknow Super Giants Won by 56 runs': 1, 'Sunrisers Hyderabad Won by 9 Runs': 1, 'Punjab Kings Won By  4 wickets': 1, 'Royal Challengers Bengaluru Won  by 18 Runs': 1, 'Delhi Capitals Won by 5 runs': 1, 'Kolkata Knight Riders Won by 5 Runs': 1, 'Gujarat Titans Won by 9 Wickets': 1, 'Chennai Super Kings Won by 6 wickets': 1, 'Delhi Capitals Won by 7 Wickets': 1, 'Gujarat Titans Won By 56 Runs': 1, 'Royal Challengers Bengaluru Won By 7 Runs': 1, 'Gujarat Titans Won by 7 runs': 1, 'Rajasthan Royals Won by 9 Wickets': 1, 'Chennai Super Kings Won by 7 Wickets': 1, 'Rajasthan Royals Won by 57 Runs': 1, 'Kolkata Knight Riders Won By 3 Wickets': 1, 'Lucknow Super Giants Won by 1 wicket': 1, 'Mumbai Indians Won By 6 Wickets': 1, 'Rajasthan Royals Won by 3 Runs': 1, 'Gujarat Titans Won By 6 Wickets': 1, 'Sunrisers Hyderabad Won By 23 Runs': 1, 'Royal Challengers Bengaluru won by 23 runs': 1, 'Punjab Kings won by 2 wickets': 1, 'Mumbai Indians won by 5 wickets': 1, 'Rajasthan Royals Won by 3 Wickets': 1, 'Chennai Super Kings Won by 8 Runs': 1, 'Mumbai Indians Won by 14 Runs': 1, 'Lucknow Super Giants Won by 10 Runs': 1, 'Royal Challengers Bengaluru Won by 24 Runs': 1, 'Chennai Super Kings Won by 27 Runs': 1, 'Mumbai Indians Won by 27 Runs': 1, 'England Won by 95 runs': 1, 'Bangladesh won by 16 runs': 1, 'Bangladesh Won by 77 Runs': 1, 'Afghanistan Won by 7 Wickets': 1, 'Pakistan Won by 66 Runs': 1, 'Pakistan Won by 88 Runs': 1, 'Pakistan Won by 38 runs': 1, 'New Zealand Won by 4 Runs': 1, 'Bangladesh Won by 6 Wickets(D/L Method)': 1, 'West Indies Won   by 4 runs': 1, 'India won by 9 wickets': 1, 'New Zealand Won by 19 Runs': 1, 'United Arab Emirates Won by 7 Wickets': 1, 'New Zealand Won by 32 Runs': 1, 'India Won by 2 Runs (DLS method)': 1, 'India Won by 33 Runs': 1, 'England won by 7 wickets': 1, 'Bangladesh Won by 22 Runs (DLS method)': 1, 'Bangladesh Won  by 4 Wickets': 1, 'Punjab Kings Won by 31 Runs': 1, 'Bangladesh Won by 6 Wickets': 1, 'Royal Challengers Bengaluru Won by 112 runs': 1, 'Kolkata Knight Riders won by 6 Wickets': 1, 'Gujarat Titans Won by 34 runs': 1, 'Lucknow Super Giants won by 5 runs': 1, 'Delhi Capitals Won by 15 runs': 1, 'Chennai Super Kings Won by 77 runs': 1, 'Lucknow Super Giants won by 1 run': 1, 'Gujarat Titans Won by 6 wickets': 1, 'Chennai Super Kings Won by 15 runs': 1, 'Mumbai Indians won by 81 runs': 1, 'Chennai Super Kings Won by 5 wickets  (DLS method)': 1, 'West Indies won by 3 wickets': 1, 'South Africa Won by 6 wickets': 1, 'Sri Lanka won the super over': 1, 'New Zealand Won by 4 Wickets': 1, 'Afghanistan Won by 19 runs': 1}
+
+ toss_opted {'Fielding': 639, 'Batting': 229, nan: 15}
+
+ venue_country {'India': 425, 'United Arab Emirates': 69, 'New Zealand': 52, 'United Kingdom': 49, 'West Indies': 44, 'Zimbabwe': 38, 'Pakistan': 36, 'Bangladesh': 34, 'Sri Lanka': 26, 'Australia': 24, 'Oman': 21, 'South Africa': 18, 'Qatar': 15, 'Netherlands': 14, 'Ireland': 10, 'United States': 7, 'Japan': 1}
+2022-01-22 2026-11-01
+     comp_id                                          comp_name match_format   season
+0       3395       South Africa in New Zealand T20I Series 2026         T20I     2026
+1       3405           Afghanistan v Sri Lanka T20I Series 2026         T20I     2026
+2       3465                 India in Zimbabwe T20I Series 2026         T20I     2026
+3       3568            Bangladesh in Zimbabwe T20I Series 2026         T20I     2026
+4       3482           Australia in Bangladesh T20I Series 2026         T20I     2026
+5       3464          Sri Lanka in West Indies T20I Series 2026         T20I     2026
+6       3765             Sri Lanka in Pakistan T20I Series 2026         T20I     2026
+7       3739                     India in Japan T20I Match 2026         T20I     2026
+8       3787            Afghanistan v Zimbabwe T20I Series 2026         T20I     2026
+9       3713     Afghanistan vs India in India T20I Series 2026         T20I     2026
+10      3690              India in New Zealand T20I Series 2026         T20I     2026
+11      3473     United Arab Emirates in Nepal T20I Series 2026         T20I     2026
+12      1358                                           IPL 2022          T20     2022
+13      1715                                           IPL 2023          T20     2023
+14      2670              Mens T20 Emerging Teams Asia Cup 2024          T20     2024
+15      2193                                           IPL 2024          T20     2024
+16      2725                                           IPL 2025          T20     2025
+17      3289                         Asia Cup Rising Stars 2025          T20     2025
+18      3298                                           IPL 2026          T20     2026
+19      1611              England in Australia T20I Series 2022         T20I     2022
+20      1331            England in West Indies T20I Series 2022         T20I     2022
+21      1551                       Asia Cup T20 Qualifiers 2022         T20I     2022
+22      1531           South Africa vs Ireland T20I Series 2022         T20I     2022
+23      1523            Bangladesh in Zimbabwe T20I Series 2022         T20I     2022
+24      1452         Bangladesh in West Indies T20I Series 2022         T20I     2022
+25      1517           South Africa in England T20I Series 2022         T20I     2022
+26      1458           Afghanistan in Zimbabwe T20I Series 2022         T20I     2022
+27      1537        New Zealand in West Indies T20I Series 2022         T20I     2022
+28      1494                  India in England T20I Series 2022         T20I     2022
+29      1345            Sri Lanka in Australia T20I Series 2022         T20I     2022
+30      1533                        Mens Twenty20 Asia Cup 2022         T20I     2022
+31      1335              West Indies in India T20I Series 2022         T20I     2022
+32      1603          West Indies in Australia T20I Series 2022         T20I     2022
+33      1474                  India in Ireland T20I Series 2022         T20I     2022
+34      1534        New Zealand in Netherlands T20I Series 2022         T20I     2022
+35      1439             South Africa in India T20I Series 2022         T20I     2022
+36      1601  Bangladesh in United Arab Emirates T20I Series...         T20I     2022
+37      1435            Australia in Sri Lanka T20I Series 2022         T20I     2022
+38      1499              India in West Indies T20I Series 2022         T20I     2022
+39      1512            New Zealand in Ireland T20I Series 2022         T20I     2022
+40      1595               England in Pakistan T20I Series 2022         T20I     2022
+41      1543            Afghanistan in Ireland T20I Series 2022         T20I     2022
+42      1584                Australia in India T20I Series 2022         T20I     2022
+43      1646           India in New Zealand T20I Series 2022/23         T20I  2022/23
+44      1599          South Africa in India T20I Series 2022/23         T20I  2022/23
+45      1608                New Zealand T20I Tri Series 2022/23         T20I  2022/23
+46      1698                Sri Lanka in India T20I Series 2023         T20I     2023
+47      2047             India in South Africa T20I Series 2023         T20I     2023
+48      1719          Sri Lanka in New Zealand T20I Series 2023         T20I     2023
+49      2058         Bangladesh in New Zealand T20I Series 2023         T20I     2023
+50      1709               Ireland in Zimbabwe T20I Series 2023         T20I     2023
+51      1792            Afghanistan v Pakistan T20I Series 2023         T20I     2023
+52      1742             England in Bangladesh T20I Series 2023         T20I     2023
+53      1769             Ireland in Bangladesh T20I Series 2023         T20I     2023
+54      1718       West Indies in South Africa T20I Series 2023         T20I     2023
+55      1799           New Zealand in Pakistan T20I Series 2023         T20I     2023
+56      1999            New Zealand in England T20I Series 2023         T20I     2023
+57      2000         Australia in South Africa T20I Series 2023         T20I     2023
+58      2046                Australia in India T20I Series 2023         T20I     2023
+59      1998                  India in Ireland T20I Series 2023         T20I     2023
+60      2048            England in West Indies T20I Series 2023         T20I     2023
+61      1700              New Zealand in India T20I Series 2023         T20I     2023
+62      1885         Afghanistan in Bangladesh T20I Series 2023         T20I     2023
+63      1997  New Zealand in United Arab Emirates T20I Serie...         T20I     2023
+64      1913              India in West Indies T20I Series 2023         T20I     2023
+65      2188            Ireland in Zimbabwe T20I Series 2023/24         T20I  2023/24
+66      2722              Pakistan in Zimbabwe T20I Series 2024         T20I     2024
+67      2059              Afghanistan in India T20I Series 2024         T20I     2024
+68      2716          New Zealand in Sri Lanka T20I Series 2024         T20I     2024
+69      2512               Bangladesh in India T20I Series 2024         T20I     2024
+70      2267          Afghanistan in Sri Lanka T20I Series 2024         T20I     2024
+71      2229             Zimbabwe in Sri Lanka T20I Series 2024         T20I     2024
+72      2753           Afghanistan in Zimbabwe T20I Series 2024         T20I     2024
+73      2561             Australia in Scotland T20I Series 2024         T20I     2024
+74      2692          West Indies in Sri Lanka T20I Series 2024         T20I     2024
+75      2542                India in Sri Lanka T20I Series 2024         T20I     2024
+76      2305           Sri Lanka in Bangladesh T20I Series 2024         T20I     2024
+77      2398            Netherlands Tri-Nation T20I Series 2024         T20I     2024
+78      2605  Netherlands Tri-Nation T20I Series [Aug 2024] ...         T20I     2024
+79      2060           Pakistan in New Zealand T20I series 2024         T20I     2024
+80      2453       South Africa in West Indies T20I Series 2024         T20I     2024
+81      2395               Pakistan in Ireland T20I series 2024         T20I     2024
+82      2387             Pakistan in Australia T20I Series 2024         T20I     2024
+83      2457         Bangladesh in West Indies T20I Series 2024         T20I     2024
+84      2548              Australia in England T20I Series 2024         T20I     2024
+85      2354               Pakistan in England T20I Series 2024         T20I     2024
+86      2350           New Zealand in Pakistan T20I Series 2024         T20I     2024
+87      2371            Zimbabwe in Bangladesh T20I Series 2024         T20I     2024
+88      2062          Australia in New Zealand T20I Series 2024         T20I     2024
+89      2269             Afghanistan v Ireland T20I Series 2024         T20I     2024
+90      2372                 India in Zimbabwe T20I Series 2024         T20I     2024
+91      2455            England in West Indies T20I Series 2024         T20I     2024
+92      2061          West Indies in Australia T20I Series 2024         T20I     2024
+93      2452  South Africa in West Indies T20I Series [May 2...         T20I     2024
+94      2442          Pakistan in South Africa T20I Series 2024         T20I     2024
+95      2718             India in South Africa T20I Series 2024         T20I     2024
+96      2562            Ireland v South Africa T20I Series 2024         T20I     2024
+97      2755       Sri Lanka in New Zealand T20I Series 2024/25         T20I  2024/25
+98      3074            Pakistan in Bangladesh T20I Series 2025         T20I     2025
+99      3197          Australia in New Zealand T20I Series 2025         T20I     2025
+100     3241         West Indies in Bangladesh T20I Series 2025         T20I     2025
+101     3282        West Indies in New Zealand T20I Series 2025         T20I     2025
+102     3190               Nepal v West Indies T20I Series 2025         T20I     2025
+103     2801               Ireland in Zimbabwe T20I Series 2025         T20I     2025
+104     2626            West Indies in England T20I Series 2025         T20I     2025
+105     3162             Sri Lanka in Zimbabwe T20I Series 2025         T20I     2025
+106     3163         Netherlands in Bangladesh T20I Series 2025         T20I     2025
+107     3254           Afghanistan in Zimbabwe T20I Series 2025         T20I     2025
+108     2874          Australia in West Indies T20I Series 2025         T20I     2025
+109     2793           Pakistan in New Zealand T20I Series 2025         T20I     2025
+110     3020           Bangladesh in Sri Lanka T20I Series 2025         T20I     2025
+111     3133                                      Asia Cup 2025         T20I     2025
+112     2912         South Africa in Australia T20I Series 2025         T20I     2025
+113     3251             Ireland in Bangladesh T20I Series 2025         T20I     2025
+114     3223          South Africa in Pakistan T20I Series 2025         T20I     2025
+115     2975  Bangladesh in United Arab Emirates T20I Series...         T20I     2025
+116     2873            West Indies in Ireland T20I Series 2025         T20I     2025
+117     2513                  England in India T20I Series 2025         T20I     2025
+118     2940               India in Bangladesh T20I Series 2025         T20I     2025
+119     3226            England in New Zealand T20I Series 2025         T20I     2025
+120     2921             South Africa in India T20I Series 2025         T20I     2025
+121     2973            Bangladesh in Pakistan T20I Series 2025         T20I     2025
+122     3159          United Arab Emirates T20I Tri-Series 2025         T20I     2025
+123     2628           South Africa in England T20I Series 2025         T20I     2025
+124     2875           Pakistan in West Indies T20I Series 2025         T20I     2025
+125     3174                England in Ireland T20I series 2025         T20I     2025
+126     3288                      Pakistan T20I Tri-Series 2025         T20I     2025
+127     3228          Afghanistan v Bangladesh T20I Series 2025         T20I     2025
+128     2915                India in Australia T20I Series 2025         T20I     2025
+129     3358             Australia in Pakistan T20I Series 2026         T20I     2026
+130     3450              West Indies in India T20I Series 2026         T20I     2026
+131     3331         Afghanistan v West Indies T20I Series 2026         T20I     2026
+132     3317             Pakistan in Sri Lanka T20I Series 2026         T20I     2026
+133     3329              New Zealand in India T20I Series 2026         T20I     2026
+134     3126                  India in England T20I Series 2026         T20I     2026
+135     3313   Ireland in United Arab Emirates T20I Series 2026         T20I     2026
+136     3128              Sri Lanka in England T20I Series 2026         T20I     2026
+137     3446                  India in Ireland T20I Series 2026         T20I     2026
+138     2906       West Indies in South Africa T20I Series 2026         T20I     2026
+139     3334              England in Sri Lanka T20I Series 2026         T20I     2026
+140     3433         New Zealand in Bangladesh T20I Series 2026         T20I     2026
+first_inn_revised_overs {nan: 858, 54.0: 4, 84.0: 3, 66.0: 3, 114.0: 2, 102.0: 2, 30.0: 2, 90.0: 2, 108.0: 2, 48.0: 1, 72.0: 1, 42.0: 1, 78.0: 1, 60.0: 1}
+second_inn_revised_overs {nan: 858, 90.0: 5, 114.0: 3, 48.0: 3, 42.0: 2, 102.0: 2, 60.0: 2, 30.0: 2, 54.0: 2, 72.0: 1, 78.0: 1, 84.0: 1, 66.0: 1}
+revised_target nonnull 23
+win_team null 41
+comp_name                                                season 
+Afghanistan in Bangladesh T20I Series 2023               2023        2
+Afghanistan in India T20I Series 2024                    2024        3
+Afghanistan in Ireland T20I Series 2022                  2022        5
+Afghanistan in Sri Lanka T20I Series 2024                2024        3
+Afghanistan in Zimbabwe T20I Series 2022                 2022        3
+Afghanistan in Zimbabwe T20I Series 2024                 2024        3
+Afghanistan in Zimbabwe T20I Series 2025                 2025        3
+Afghanistan v Bangladesh T20I Series 2025                2025        3
+Afghanistan v Ireland T20I Series 2024                   2024        3
+Afghanistan v Pakistan T20I Series 2023                  2023        3
+Afghanistan v West Indies T20I Series 2026               2026        3
+Afghanistan v Zimbabwe T20I Series 2026                  2026        3
+Afghanistan vs India in India T20I Series 2026           2026        3
+Asia Cup 2025                                            2025       19
+Asia Cup Rising Stars 2025                               2025       15
+Asia Cup T20 Qualifiers 2022                             2022        6
+Australia in Bangladesh T20I Series 2026                 2026        3
+Australia in England T20I Series 2024                    2024        3
+Australia in India T20I Series 2022                      2022        3
+Australia in India T20I Series 2023                      2023        5
+Australia in New Zealand T20I Series 2024                2024        3
+Australia in New Zealand T20I Series 2025                2025        3
+Australia in Pakistan T20I Series 2026                   2026        3
+Australia in Scotland T20I Series 2024                   2024        3
+Australia in South Africa T20I Series 2023               2023        3
+Australia in Sri Lanka T20I Series 2022                  2022        3
+Australia in West Indies T20I Series 2025                2025        5
+Bangladesh in India T20I Series 2024                     2024        3
+Bangladesh in New Zealand T20I Series 2023               2023        3
+Bangladesh in Pakistan T20I Series 2025                  2025        3
+Bangladesh in Sri Lanka T20I Series 2025                 2025        3
+Bangladesh in United Arab Emirates T20I Series 2022      2022        2
+Bangladesh in United Arab Emirates T20I Series 2025      2025        3
+Bangladesh in West Indies T20I Series 2022               2022        3
+Bangladesh in West Indies T20I Series 2024               2024        3
+Bangladesh in Zimbabwe T20I Series 2022                  2022        3
+Bangladesh in Zimbabwe T20I Series 2026                  2026        3
+England in Australia T20I Series 2022                    2022        3
+England in Bangladesh T20I Series 2023                   2023        3
+England in India T20I Series 2025                        2025        5
+England in Ireland T20I series 2025                      2025        3
+England in New Zealand T20I Series 2025                  2025        3
+England in Pakistan T20I Series 2022                     2022        7
+England in Sri Lanka T20I Series 2026                    2026        3
+England in West Indies T20I Series 2022                  2022        5
+England in West Indies T20I Series 2023                  2023        5
+England in West Indies T20I Series 2024                  2024        5
+IPL 2022                                                 2022       74
+IPL 2023                                                 2023       74
+IPL 2024                                                 2024       74
+IPL 2025                                                 2025       75
+IPL 2026                                                 2026       74
+India in Australia T20I Series 2025                      2025        5
+India in England T20I Series 2022                        2022        3
+India in England T20I Series 2026                        2026        5
+India in Ireland T20I Series 2022                        2022        2
+India in Ireland T20I Series 2023                        2023        2
+India in Ireland T20I Series 2026                        2026        2
+India in Japan T20I Match 2026                           2026        1
+India in New Zealand T20I Series 2022/23                 2022/23     2
+India in New Zealand T20I Series 2026                    2026        5
+India in South Africa T20I Series 2023                   2023        2
+India in South Africa T20I Series 2024                   2024        4
+India in Sri Lanka T20I Series 2024                      2024        3
+India in West Indies T20I Series 2022                    2022        5
+India in West Indies T20I Series 2023                    2023        5
+India in Zimbabwe T20I Series 2024                       2024        5
+India in Zimbabwe T20I Series 2026                       2026        3
+Ireland in Bangladesh T20I Series 2023                   2023        3
+Ireland in Bangladesh T20I Series 2025                   2025        3
+Ireland in United Arab Emirates T20I Series 2026         2026        2
+Ireland in Zimbabwe T20I Series 2023                     2023        3
+Ireland in Zimbabwe T20I Series 2023/24                  2023/24     3
+Ireland in Zimbabwe T20I Series 2025                     2025        3
+Ireland v South Africa T20I Series 2024                  2024        2
+Mens T20 Emerging Teams Asia Cup 2024                    2024       15
+Mens Twenty20 Asia Cup 2022                              2022       13
+Nepal v West Indies T20I Series 2025                     2025        3
+Netherlands Tri-Nation T20I Series 2024                  2024        6
+Netherlands Tri-Nation T20I Series [Aug 2024] 2024       2024        6
+Netherlands in Bangladesh T20I Series 2025               2025        3
+New Zealand T20I Tri Series 2022/23                      2022/23     7
+New Zealand in Bangladesh T20I Series 2026               2026        3
+New Zealand in England T20I Series 2023                  2023        4
+New Zealand in India T20I Series 2023                    2023        3
+New Zealand in India T20I Series 2026                    2026        5
+New Zealand in Ireland T20I Series 2022                  2022        3
+New Zealand in Netherlands T20I Series 2022              2022        2
+New Zealand in Pakistan T20I Series 2023                 2023        5
+New Zealand in Pakistan T20I Series 2024                 2024        5
+New Zealand in Sri Lanka T20I Series 2024                2024        2
+New Zealand in United Arab Emirates T20I Series 2023     2023        3
+New Zealand in West Indies T20I Series 2022              2022        3
+Pakistan T20I Tri-Series 2025                            2025        7
+Pakistan in Australia T20I Series 2024                   2024        3
+Pakistan in Bangladesh T20I Series 2025                  2025        3
+Pakistan in England T20I Series 2024                     2024        4
+Pakistan in Ireland T20I series 2024                     2024        3
+Pakistan in New Zealand T20I Series 2025                 2025        5
+Pakistan in New Zealand T20I series 2024                 2024        5
+Pakistan in South Africa T20I Series 2024                2024        3
+Pakistan in Sri Lanka T20I Series 2026                   2026        3
+Pakistan in West Indies T20I Series 2025                 2025        3
+Pakistan in Zimbabwe T20I Series 2024                    2024        3
+South Africa in Australia T20I Series 2025               2025        3
+South Africa in England T20I Series 2022                 2022        3
+South Africa in England T20I Series 2025                 2025        3
+South Africa in India T20I Series 2022                   2022        5
+South Africa in India T20I Series 2022/23                2022/23     3
+South Africa in India T20I Series 2025                   2025        5
+South Africa in New Zealand T20I Series 2026             2026        5
+South Africa in Pakistan T20I Series 2025                2025        3
+South Africa in West Indies T20I Series 2024             2024        3
+South Africa in West Indies T20I Series [May 2024] 2024  2024        3
+South Africa vs Ireland T20I Series 2022                 2022        2
+Sri Lanka in Australia T20I Series 2022                  2022        5
+Sri Lanka in Bangladesh T20I Series 2024                 2024        3
+Sri Lanka in England T20I Series 2026                    2026        3
+Sri Lanka in India T20I Series 2023                      2023        3
+Sri Lanka in New Zealand T20I Series 2023                2023        3
+Sri Lanka in New Zealand T20I Series 2024/25             2024/25     3
+Sri Lanka in Pakistan T20I Series 2026                   2026        3
+Sri Lanka in West Indies T20I Series 2026                2026        3
+Sri Lanka in Zimbabwe T20I Series 2025                   2025        3
+United Arab Emirates T20I Tri-Series 2025                2025        7
+West Indies in Australia T20I Series 2022                2022        2
+West Indies in Australia T20I Series 2024                2024        3
+West Indies in Bangladesh T20I Series 2025               2025        3
+West Indies in England T20I Series 2025                  2025        3
+West Indies in India T20I Series 2022                    2022        3
+West Indies in India T20I Series 2026                    2026        5
+West Indies in Ireland T20I Series 2025                  2025        3
+West Indies in New Zealand T20I Series 2025              2025        5
+West Indies in South Africa T20I Series 2023             2023        3
+West Indies in South Africa T20I Series 2026             2026        3
+West Indies in Sri Lanka T20I Series 2024                2024        3
+Zimbabwe in Bangladesh T20I Series 2024                  2024        5
+Zimbabwe in Sri Lanka T20I Series 2024                   2024        3
+dtype: int64
+year                                                2022  2023  2024  2025  2026
+comp_name                                                                       
+Afghanistan in Bangladesh T20I Series 2023             0     2     0     0     0
+Afghanistan in India T20I Series 2024                  0     0     3     0     0
+Afghanistan in Ireland T20I Series 2022                5     0     0     0     0
+Afghanistan in Sri Lanka T20I Series 2024              0     0     3     0     0
+Afghanistan in Zimbabwe T20I Series 2022               3     0     0     0     0
+Afghanistan in Zimbabwe T20I Series 2024               0     0     3     0     0
+Afghanistan in Zimbabwe T20I Series 2025               0     0     0     3     0
+Afghanistan v Bangladesh T20I Series 2025              0     0     0     3     0
+Afghanistan v Ireland T20I Series 2024                 0     0     3     0     0
+Afghanistan v Pakistan T20I Series 2023                0     3     0     0     0
+Afghanistan v West Indies T20I Series 2026             0     0     0     0     3
+Afghanistan v Zimbabwe T20I Series 2026                0     0     0     0     3
+Afghanistan vs India in India T20I Series 2026         0     0     0     0     3
+Asia Cup 2025                                          0     0     0    19     0
+Asia Cup Rising Stars 2025                             0     0     0    15     0
+Asia Cup T20 Qualifiers 2022                           6     0     0     0     0
+Australia in Bangladesh T20I Series 2026               0     0     0     0     3
+Australia in England T20I Series 2024                  0     0     3     0     0
+Australia in India T20I Series 2022                    3     0     0     0     0
+Australia in India T20I Series 2023                    0     5     0     0     0
+Australia in New Zealand T20I Series 2024              0     0     3     0     0
+Australia in New Zealand T20I Series 2025              0     0     0     3     0
+Australia in Pakistan T20I Series 2026                 0     0     0     0     3
+Australia in Scotland T20I Series 2024                 0     0     3     0     0
+Australia in South Africa T20I Series 2023             0     3     0     0     0
+Australia in Sri Lanka T20I Series 2022                3     0     0     0     0
+Australia in West Indies T20I Series 2025              0     0     0     5     0
+Bangladesh in India T20I Series 2024                   0     0     3     0     0
+Bangladesh in New Zealand T20I Series 2023             0     3     0     0     0
+Bangladesh in Pakistan T20I Series 2025                0     0     0     3     0
+Bangladesh in Sri Lanka T20I Series 2025               0     0     0     3     0
+Bangladesh in United Arab Emirates T20I Series ...     2     0     0     0     0
+Bangladesh in United Arab Emirates T20I Series ...     0     0     0     3     0
+Bangladesh in West Indies T20I Series 2022             3     0     0     0     0
+Bangladesh in West Indies T20I Series 2024             0     0     3     0     0
+Bangladesh in Zimbabwe T20I Series 2022                3     0     0     0     0
+Bangladesh in Zimbabwe T20I Series 2026                0     0     0     0     3
+England in Australia T20I Series 2022                  3     0     0     0     0
+England in Bangladesh T20I Series 2023                 0     3     0     0     0
+England in India T20I Series 2025                      0     0     0     5     0
+England in Ireland T20I series 2025                    0     0     0     3     0
+England in New Zealand T20I Series 2025                0     0     0     3     0
+England in Pakistan T20I Series 2022                   7     0     0     0     0
+England in Sri Lanka T20I Series 2026                  0     0     0     0     3
+England in West Indies T20I Series 2022                5     0     0     0     0
+England in West Indies T20I Series 2023                0     5     0     0     0
+England in West Indies T20I Series 2024                0     0     5     0     0
+IPL 2022                                              74     0     0     0     0
+IPL 2023                                               0    74     0     0     0
+IPL 2024                                               0     0    74     0     0
+IPL 2025                                               0     0     0    75     0
+IPL 2026                                               0     0     0     0    74
+India in Australia T20I Series 2025                    0     0     0     5     0
+India in England T20I Series 2022                      3     0     0     0     0
+India in England T20I Series 2026                      0     0     0     0     5
+India in Ireland T20I Series 2022                      2     0     0     0     0
+India in Ireland T20I Series 2023                      0     2     0     0     0
+India in Ireland T20I Series 2026                      0     0     0     0     2
+India in Japan T20I Match 2026                         0     0     0     0     1
+India in New Zealand T20I Series 2022/23               2     0     0     0     0
+India in New Zealand T20I Series 2026                  0     0     0     0     5
+India in South Africa T20I Series 2023                 0     2     0     0     0
+India in South Africa T20I Series 2024                 0     0     4     0     0
+India in Sri Lanka T20I Series 2024                    0     0     3     0     0
+India in West Indies T20I Series 2022                  5     0     0     0     0
+India in West Indies T20I Series 2023                  0     5     0     0     0
+India in Zimbabwe T20I Series 2024                     0     0     5     0     0
+India in Zimbabwe T20I Series 2026                     0     0     0     0     3
+Ireland in Bangladesh T20I Series 2023                 0     3     0     0     0
+Ireland in Bangladesh T20I Series 2025                 0     0     0     3     0
+Ireland in United Arab Emirates T20I Series 2026       0     0     0     0     2
+Ireland in Zimbabwe T20I Series 2023                   0     3     0     0     0
+Ireland in Zimbabwe T20I Series 2023/24                0     3     0     0     0
+Ireland in Zimbabwe T20I Series 2025                   0     0     0     3     0
+Ireland v South Africa T20I Series 2024                0     0     2     0     0
+Mens T20 Emerging Teams Asia Cup 2024                  0     0    15     0     0
+Mens Twenty20 Asia Cup 2022                           13     0     0     0     0
+Nepal v West Indies T20I Series 2025                   0     0     0     3     0
+Netherlands Tri-Nation T20I Series 2024                0     0     6     0     0
+Netherlands Tri-Nation T20I Series [Aug 2024] 2024     0     0     6     0     0
+Netherlands in Bangladesh T20I Series 2025             0     0     0     3     0
+New Zealand T20I Tri Series 2022/23                    7     0     0     0     0
+New Zealand in Bangladesh T20I Series 2026             0     0     0     0     3
+New Zealand in England T20I Series 2023                0     4     0     0     0
+New Zealand in India T20I Series 2023                  0     3     0     0     0
+New Zealand in India T20I Series 2026                  0     0     0     0     5
+New Zealand in Ireland T20I Series 2022                3     0     0     0     0
+New Zealand in Netherlands T20I Series 2022            2     0     0     0     0
+New Zealand in Pakistan T20I Series 2023               0     5     0     0     0
+New Zealand in Pakistan T20I Series 2024               0     0     5     0     0
+New Zealand in Sri Lanka T20I Series 2024              0     0     2     0     0
+New Zealand in United Arab Emirates T20I Series...     0     3     0     0     0
+New Zealand in West Indies T20I Series 2022            3     0     0     0     0
+Pakistan T20I Tri-Series 2025                          0     0     0     7     0
+Pakistan in Australia T20I Series 2024                 0     0     3     0     0
+Pakistan in Bangladesh T20I Series 2025                0     0     0     3     0
+Pakistan in England T20I Series 2024                   0     0     4     0     0
+Pakistan in Ireland T20I series 2024                   0     0     3     0     0
+Pakistan in New Zealand T20I Series 2025               0     0     0     5     0
+Pakistan in New Zealand T20I series 2024               0     0     5     0     0
+Pakistan in South Africa T20I Series 2024              0     0     3     0     0
+Pakistan in Sri Lanka T20I Series 2026                 0     0     0     0     3
+Pakistan in West Indies T20I Series 2025               0     0     0     3     0
+Pakistan in Zimbabwe T20I Series 2024                  0     0     3     0     0
+South Africa in Australia T20I Series 2025             0     0     0     3     0
+South Africa in England T20I Series 2022               3     0     0     0     0
+South Africa in England T20I Series 2025               0     0     0     3     0
+South Africa in India T20I Series 2022                 5     0     0     0     0
+South Africa in India T20I Series 2022/23              3     0     0     0     0
+South Africa in India T20I Series 2025                 0     0     0     5     0
+South Africa in New Zealand T20I Series 2026           0     0     0     0     5
+South Africa in Pakistan T20I Series 2025              0     0     0     3     0
+South Africa in West Indies T20I Series 2024           0     0     3     0     0
+South Africa in West Indies T20I Series [May 20...     0     0     3     0     0
+South Africa vs Ireland T20I Series 2022               2     0     0     0     0
+Sri Lanka in Australia T20I Series 2022                5     0     0     0     0
+Sri Lanka in Bangladesh T20I Series 2024               0     0     3     0     0
+Sri Lanka in England T20I Series 2026                  0     0     0     0     3
+Sri Lanka in India T20I Series 2023                    0     3     0     0     0
+Sri Lanka in New Zealand T20I Series 2023              0     3     0     0     0
+Sri Lanka in New Zealand T20I Series 2024/25           0     0     2     1     0
+Sri Lanka in Pakistan T20I Series 2026                 0     0     0     0     3
+Sri Lanka in West Indies T20I Series 2026              0     0     0     0     3
+Sri Lanka in Zimbabwe T20I Series 2025                 0     0     0     3     0
+United Arab Emirates T20I Tri-Series 2025              0     0     0     7     0
+West Indies in Australia T20I Series 2022              2     0     0     0     0
+West Indies in Australia T20I Series 2024              0     0     3     0     0
+West Indies in Bangladesh T20I Series 2025             0     0     0     3     0
+West Indies in England T20I Series 2025                0     0     0     3     0
+West Indies in India T20I Series 2022                  3     0     0     0     0
+West Indies in India T20I Series 2026                  0     0     0     0     5
+West Indies in Ireland T20I Series 2025                0     0     0     3     0
+West Indies in New Zealand T20I Series 2025            0     0     0     5     0
+West Indies in South Africa T20I Series 2023           0     3     0     0     0
+West Indies in South Africa T20I Series 2026           0     0     0     0     3
+West Indies in Sri Lanka T20I Series 2024              0     0     3     0     0
+Zimbabwe in Bangladesh T20I Series 2024                0     0     5     0     0
+Zimbabwe in Sri Lanka T20I Series 2024                 0     0     3     0     0
+matches in bbb 867 in matches 883 bbb not in matches 0
+innings
+2    839
+1     22
+4      6
+Name: count, dtype: int64
+count    200999.000000
+mean         10.104622
+std           5.659311
+min           1.000000
+25%           5.000000
+50%          10.000000
+75%          15.000000
+max          20.000000
+Name: overid, dtype: float64 20
